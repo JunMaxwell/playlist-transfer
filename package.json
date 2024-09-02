@@ -2,7 +2,20 @@
   "name": "playlist-transferer",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "cd ui && npm install && cd ../middleware && npm install",
+    "start:ui": "cd ui && npm start",
+    "start:mw": "cd middleware && npm start",
+    "dev:ui": "cd ui && npm run dev",
+    "dev:mw": "cd middleware && npm run dev",
+    "build": "cd ui && npm run build && cd ../middleware && npm run build",
+    "build:ui": "cd ui && npm run build",
+    "build:mw": "cd middleware && npm run build",
+    "test": "cd ui && npm test && cd ../middleware && npm test",
+    "test:ui": "cd ui && npm test",
+    "test:mw": "cd middleware && npm test",
+    "lint": "cd ui && npm run lint && cd ../middleware && npm run lint",
+    "lint:ui": "cd ui && npm run lint",
+    "lint:mw": "cd middleware && npm run lint"
   },
   "keywords": [
     "playlist",
