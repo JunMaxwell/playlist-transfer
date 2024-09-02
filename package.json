@@ -15,7 +15,8 @@
     "test:mw": "cd middleware && npm test",
     "lint": "cd ui && npm run lint && cd ../middleware && npm run lint",
     "lint:ui": "cd ui && npm run lint",
-    "lint:mw": "cd middleware && npm run lint"
+    "lint:mw": "cd middleware && npm run lint",
+    "prepare": "node .husky/install.mjs"
   },
   "keywords": [
     "playlist",
@@ -27,10 +28,10 @@
   "author": "JunMaxwell",
   "license": "ISC",
   "description": "Project playlist transferer between music streaming services",
-  "dependencies": {
-    "husky": "^9.1.5"
-  },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "husky": "^9.1.5",
     "typescript": "^5.5.4"
   }
 }
