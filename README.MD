@@ -1,62 +1,111 @@
 # Playlist Transferer
 
-This project consists of two subfolders: `middleware` and `UI`.
+## Description
+Hobby project to transfer playlists between different music streaming services. 
 
-## Middleware
-The `middleware` folder contains the backend code for the Playlist Transferer application. It is built using NestJS and TypeScript.
+The project is built using [NestJS](https://nestjs.com) for the backend and [React](https://reactjs.org) for the frontend. The project uses [Vite](https://vitejs.dev) as the frontend build tool.
 
-## UI
-The `UI` folder contains the frontend code for the Playlist Transferer application. It is built using React and TypeScript.
+## Requirements
 
-## Project setup
+| Node Version | NPM Version |
+|--------------|-------------|
+| 18.20.3      | 10.8.1      |
+
+
+## Project Structure
+The project is structured as follows:
+```
+project
+│  README.md
+|  package.json    
+└───middleware
+|   |   README.md
+│   │   package.json
+│   │   tsconfig.json
+|   |   nest-cli.json
+|   |   ...
+│   └───src
+|   |   |   main.ts
+|   |   |   ...
+|   └───tests
+|       |   app.e2e-spec.ts
+|       |   ...
+└───ui
+|   |   README.md
+|   |   package.json
+|   |   tsconfig.json
+|   |   vite.config.ts
+|   |   ...
+|   └───src
+|   |   |   main.tsx
+|   |   |   ...
+|   └───public
+|       |   ...
+└───...
+```
+
+
+## Usage
+To use this project, follow these steps:
+
+1. Clone the repository:
 ```bash
+$ git clone https://github.com/your-username/playlist-transferer.git
+```
+
+2. Install dependencies:
+```bash
+$ cd playlist-transferer
 $ npm install
 ```
 
-## Compile and run the project
-Development mode should be run in **separate** terminals.
+3. Start the backend server:
 ```bash
-# development
 $ npm run dev:mw
+```
+
+4. Start the frontend development server:
+```bash
 $ npm run dev:ui
 ```
 
-Build the project. This will build both the middleware and the UI in a single command.
-```bash
-# Build
-$ npm run build:all
+5. Open your browser and navigate to `http://localhost:3000` to access the application.
 
-# Build individual parts
-## Middleware
+## Building the Project
+To build the project, run the following commands:
+
+- Build both the middleware and the UI in a single command:
+```bash
+$ npm run build:all
+```
+
+- Build only the middleware:
+```bash
 $ npm run build:mw
-## UI
+```
+
+- Build only the UI:
+```bash
 $ npm run build:ui
 ```
 
-Unit tests
+## Unit tests
 ```bash
-# unit tests
 $ npm run test
 ```
 
-Linting
+## Linting
 ```bash
-# Lint
 $ npm run lint
 ```
 
 ## Resources
-### NestJS
-Check out a few resources that may come in handy when working with NestJS:
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit [NestJS Discord channel](https://discord.com/invite/G7Qnnhy).
+Here are some additional resources that may be helpful:
 
-### React + Vite
-Boostrapped using the React + TypeScript + Vite template.
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-Official documentation for the template can be found here:
-- [Vite](https://v4.vitejs.dev/guide/) 
-- [React](https://reactjs.org/)
+- [NestJS Documentation](https://docs.nestjs.com) - Official documentation for NestJS.
+- [NestJS Discord Channel](https://discord.com/invite/G7Qnnhy) - Join the NestJS community on Discord for questions and support.
+- [Vite Documentation](https://v4.vitejs.dev/guide/) - Official documentation for Vite.
+- [React Documentation](https://reactjs.org/) - Official documentation for React.
 
 ## Support
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).

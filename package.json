@@ -1,6 +1,6 @@
 {
   "name": "playlist-transferer",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "install": "cd ui && npm install && cd ../middleware && npm install",
     "start:ui": "cd ui && npm start",
