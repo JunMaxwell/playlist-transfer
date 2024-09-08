@@ -34,10 +34,13 @@ project
 |   |   README.md
 |   |   package.json
 |   |   tsconfig.json
-|   |   vite.config.ts
+|   |   next.config.mjs
 |   |   ...
 |   └───src
-|   |   |   main.tsx
+|   |   └───app
+|   |   |   |   page.tsx
+|   |   |   |   layout.tsx
+|   |   |   |   ...
 |   |   |   ...
 |   └───public
 |       |   ...
@@ -104,7 +107,7 @@ Here are some additional resources that may be helpful:
 
 - [NestJS Documentation](https://docs.nestjs.com) - Official documentation for NestJS.
 - [NestJS Discord Channel](https://discord.com/invite/G7Qnnhy) - Join the NestJS community on Discord for questions and support.
-- [Vite Documentation](https://v4.vitejs.dev/guide/) - Official documentation for Vite.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [React Documentation](https://reactjs.org/) - Official documentation for React.
 
 ## Support
